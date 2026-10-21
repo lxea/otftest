@@ -30,6 +30,24 @@ terraform {
 #   version = "v0.30.0"
 # }
 
+variable "instances" {
+  type = number
+  default = 0
+  validation {
+    condition     = var.instances >= 0
+    error_message = "The number of instances must be positive or zero"
+  }
+}
+
+variable "blobs" {
+  type = number
+  default = 0
+  validation {
+    condition     = var.blobs >= 0
+    error_message = "The number of instances must be positive or zero"
+  }
+}
+
 resource "local_file" "test_resource" {
   content  = "test"
   filename = "./output"

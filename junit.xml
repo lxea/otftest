@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite assertions="1" errors="0" failures="0" file="other.tftest.hcl" name="" skipped="0" tests="1" time="0.090850259" timestamp="">
-    <testcase assertions="1" file="other.tftest.hcl" line="0" name="test" time="0.090850259"></testcase>
-  </testsuite>
-  <testsuite assertions="2" errors="0" failures="1" file="main.tftest.hcl" name="" skipped="0" tests="2" time="0.27001795" timestamp="">
-    <testcase assertions="1" file="main.tftest.hcl" line="3" name="test" time="0.208045957">
-      <failure message="Test assertion failed: Incorrect content in ./test.txt." type=""></failure>
+  <testsuite assertions="4" errors="1" failures="1" file="main.tftest.hcl" name="main.tftest.hcl" skipped="1" tests="3" time="0.269585391" timestamp="2026-10-21T13:22:08.547312978Z">
+    <testcase assertions="1" file="main.tftest.hcl" line="3" name="test" time="0.20958256">
+      <failure message="Test assertion failed: Incorrect content in ./test.txt."></failure>
     </testcase>
-    <testcase assertions="1" file="main.tftest.hcl" line="0" name="test2" time="0.061971993"></testcase>
+    <testcase assertions="2" file="main.tftest.hcl" line="18" name="main" time="0.060002831">
+      <error message="Missing expected failure: The checkable object, var.blobs, was expected to report an error but did not."></error>
+    </testcase>
+    <testcase assertions="1" file="main.tftest.hcl" line="0" name="test2" time="0">
+      <skipped message="Skipped due to error or cancelation."></skipped>
+    </testcase>
+  </testsuite>
+  <testsuite assertions="1" errors="0" failures="0" file="other.tftest.hcl" name="other.tftest.hcl" skipped="0" tests="1" time="0.092048901" timestamp="2026-10-21T13:22:08.90871434Z">
+    <testcase assertions="1" file="other.tftest.hcl" line="0" name="test" time="0.092048901"></testcase>
   </testsuite>
 </testsuites>
