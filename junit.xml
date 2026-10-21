@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite assertions="2" errors="0" failures="1" file="main.tftest.hcl" name="" skipped="0" tests="0" time="0.269170828" timestamp="">
+    <testcase assertions="1" file="main.tftest.hcl" line="3" name="test" time="0.208971517">
+      <failure message="Test assertion failed: Incorrect content in ./test.txt." type=""></failure>
+    </testcase>
+    <testcase assertions="1" file="" line="0" name="test2" time="0.060199311"></testcase>
+  </testsuite>
+  <testsuite assertions="1" errors="0" failures="0" file="other.tftest.hcl" name="" skipped="0" tests="0" time="0.091877667" timestamp="">
+    <testcase assertions="1" file="" line="0" name="test" time="0.091877667"></testcase>
+  </testsuite>
+</testsuites>
